@@ -22,5 +22,5 @@ export class AppComponent {
     borderColor: '#ffff00',
     text: '城',
     class: 'complex'
-  }]
+  }];
 }
