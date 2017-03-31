@@ -1,3 +1,5 @@
-<h1>
-  {{title}}
-</h1>
+<div class="part-container">
+  <div *ngFor="let part of parts" class="part" [style.border]="'.5rem solid' + part.borderColor">
+    <h1 [class]="part.class">{{ part.text }}</h1>
+  </div>
+</div>
