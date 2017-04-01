@@ -38,7 +38,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 /***/ 130:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"part-container\">\n  <div *ngFor=\"let part of parts\"\n       class=\"part\"\n       [style.border]=\"'.7rem solid' + part.borderColor\"\n       (mouseover)=\"showBackground(part)\"\n       (mouseleave)=\"hideBackground(part)\"\n  >\n    <img [src]=\"part.background\" class=\"background-image\" [style.opacity]=\"part.opacity\">\n    <h1 [class]=\"part.class\">{{ part.text }}</h1>\n  </div>\n</div>\n"
+module.exports = "<div class=\"part-container\">\n  <div *ngFor=\"let part of parts\"\n       class=\"part\"\n       [style.border]=\"'.7rem solid' + part.borderColor\"\n       (mouseover)=\"showBackground(part)\"\n       (mouseleave)=\"hideBackground(part)\"\n  >\n    <img [src]=\"part.background\" class=\"background-image\" [style.opacity]=\"part.opacity\">\n    <span [class]=\"part.class\">{{ part.text }}</span>\n    <div *ngIf=\"part.class == 'complex'\" class=\"complex-container\"></div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -50,7 +50,7 @@ exports = module.exports = __webpack_require__(54)();
 
 
 // module
-exports.push([module.i, ".part-container {\n  height: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 0 10%;\n}\n\n.part {\n  height: 25rem;\n  width: 15rem;\n  max-height: 80%;\n  min-height: 18rem;\n  max-width: 20%;\n  min-width: 10rem;\n  margin: 0 .5rem;\n  cursor: pointer;\n  position: relative;\n}\n\nh1 {\n  position: relative;\n  margin: 0;\n  font-size: 7rem;\n}\n\n.background-image {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n}\n\n.silly {\n  text-shadow: -0.25rem 0px 0px rgba(255, 255, 255, 1), -4.5rem 0px 0px #F22613, -4.75rem 0px 0px rgba(255, 255, 255, 1);\n  color: #EF4836;\n  top: 70%;\n  left: 50%;\n  font-family: STFangsong;\n}\n\n.wordy {\n  text-shadow: -0.25rem 0px 0px rgba(255, 255, 255, 1), -4.5rem 2rem 0px #C5EFF7, -4.75rem 2rem 0px rgba(255, 255, 255, 1);\n  color: #81CFE0;\n  top: 40%;\n  left: 30%;\n  font-family: STHeiti Light, Microsoft JhengHei;\n}\n\n.black {\n  text-shadow: .3rem .25rem 0px #D2D7D3;\n  color: #EEEEEE;\n  bottom: 4rem;\n  right: 20%;\n  font-family: STKaiti, KaiTi;\n}\n\n.complex {\n  text-shadow: -0.25rem 0px 0px rgba(255, 255, 255, 1), -4.5rem -2rem 0px #F4D03F, -4.75rem -2rem 0px rgba(255, 255, 255, 1), -9.25rem -4rem 0px #F5D76E, -9.5rem -4rem 0px rgba(255, 255, 255, 1);\n  color: #F7CA18;\n  top: 40%;\n  left: 30%;\n  font-family: STSong, SimSun;\n}\n", ""]);
+exports.push([module.i, ".part-container {\n  height: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  padding: 0 10%;\n}\n\n.part {\n  height: 25rem;\n  width: 15rem;\n  max-height: 80%;\n  min-height: 18rem;\n  max-width: 20%;\n  min-width: 10rem;\n  margin: 0 .5rem;\n  cursor: pointer;\n  position: relative;\n}\n\nspan {\n  position: relative;\n  margin: 0;\n  font-size: 7rem;\n  font-weight: bold;\n}\n\n.background-image {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -webkit-transition: all .3s;\n  transition: all .3s;\n}\n\n.silly {\n  text-shadow: -0.25rem 0px 0px rgba(255, 255, 255, 1), -4.5rem 0px 0px #F22613, -4.75rem 0px 0px rgba(255, 255, 255, 1);\n  color: #EF4836;\n  top: 70%;\n  left: 50%;\n  font-family: STFangsong;\n}\n\n.wordy {\n  text-shadow: -0.25rem 0px 0px rgba(255, 255, 255, 1), -4.5rem 2rem 0px #C5EFF7, -4.75rem 2rem 0px rgba(255, 255, 255, 1);\n  color: #81CFE0;\n  top: 40%;\n  left: 30%;\n  font-family: STHeiti Light, Microsoft JhengHei;\n}\n\n.black {\n  text-shadow: .3rem .25rem 0px #D2D7D3;\n  color: #EEEEEE;\n  bottom: 4rem;\n  right: 20%;\n  font-family: STKaiti, KaiTi;\n}\n\n.complex {\n  text-shadow: -0.25rem 0px 0px rgba(255, 255, 255, 1), -4.5rem -2rem 0px #F4D03F, -4.75rem -2rem 0px rgba(255, 255, 255, 1), -9.25rem -4rem 0px #F5D76E, -9.5rem -4rem 0px rgba(255, 255, 255, 1);\n  color: #F7CA18;\n  top: 40%;\n  left: 60%;\n  font-family: STSong, SimSun;\n}\n\n.complex-container {\n  position: absolute;\n  top: -.7rem;\n  left: -.7rem;\n  border: .7rem solid #ffff00;\n  border-right: none;\n  width: 100%;\n  height: 100%;\n}\n", ""]);
 
 // exports
 
@@ -171,13 +171,8 @@ AppModule = __decorate([
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
-// The file contents for the current environment will overwrite these during build.
 var environment = {
-    production: false
+    production: true
 };
 //# sourceMappingURL=environment.js.map
 

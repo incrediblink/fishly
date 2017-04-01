@@ -18,10 +18,11 @@
   position: relative;
 }
 
-h1 {
+span {
   position: relative;
   margin: 0;
   font-size: 7rem;
+  font-weight: bold;
 }
 
 .background-image {
@@ -62,6 +63,16 @@ h1 {
   text-shadow: -0.25rem 0px 0px rgba(255, 255, 255, 1), -4.5rem -2rem 0px #F4D03F, -4.75rem -2rem 0px rgba(255, 255, 255, 1), -9.25rem -4rem 0px #F5D76E, -9.5rem -4rem 0px rgba(255, 255, 255, 1);
   color: #F7CA18;
   top: 40%;
-  left: 30%;
+  left: 60%;
   font-family: STSong, SimSun;
+}
+
+.complex-container {
+  position: absolute;
+  top: -.7rem;
+  left: -.7rem;
+  border: .7rem solid #ffff00;
+  border-right: none;
+  width: 100%;
+  height: 100%;
 }

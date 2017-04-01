@@ -6,6 +6,7 @@
        (mouseleave)="hideBackground(part)"
   >
     <img [src]="part.background" class="background-image" [style.opacity]="part.opacity">
-    <h1 [class]="part.class">{{ part.text }}</h1>
+    <span [class]="part.class">{{ part.text }}</span>
+    <div *ngIf="part.class == 'complex'" class="complex-container"></div>
   </div>
 </div>
