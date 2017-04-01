@@ -1,5 +1,11 @@
 <div class="part-container">
-  <div *ngFor="let part of parts" class="part" [style.border]="'.5rem solid' + part.borderColor">
+  <div *ngFor="let part of parts"
+       class="part"
+       [style.border]="'.7rem solid' + part.borderColor"
+       (mouseover)="showBackground(part)"
+       (mouseleave)="hideBackground(part)"
+  >
+    <img [src]="part.background" class="background-image" [style.opacity]="part.opacity">
     <h1 [class]="part.class">{{ part.text }}</h1>
   </div>
 </div>
